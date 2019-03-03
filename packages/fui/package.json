@@ -1,19 +1,23 @@
 {
-  "name": "@chaff/fui-core",
+  "name": "@chaff/fui",
   "version": "0.0.1",
-  "description": "Core library for Fui",
+  "description": "A functional UI framework",
   "keywords": [
     "functional",
     "user",
-    "interface"
+    "interface",
+    "framework"
   ],
   "author": "Iain Reid <iainreid382@gmail.com>",
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
-  "main": "lib/fui-core.js",
+  "main": "lib/fui.js",
   "files": [
     "lib"
   ],
+  "dependencies": {
+    "@chaff/fui-core": "0.0.1"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -22,7 +26,6 @@
     "url": "git+https://github.com/iainreid820/fui.git"
   },
   "scripts": {
-    "prepare": "tsc -p .",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

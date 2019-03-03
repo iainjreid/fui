@@ -1,6 +1,7 @@
 {
   "scripts": {
     "lerna": "lerna",
+    "tsc": "tsc",
     "test": "jest"
   },
   "devDependencies": {
