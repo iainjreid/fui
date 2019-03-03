@@ -1,0 +1,30 @@
+{
+  "name": "@candied/fui-core",
+  "version": "0.0.0",
+  "description": "Core library for Fui",
+  "keywords": [
+    "functional",
+    "user",
+    "interface"
+  ],
+  "author": "Iain Reid <iainreid382@gmail.com>",
+  "homepage": "https://github.com/iainreid820/fui#readme",
+  "license": "MIT",
+  "main": "lib/fui-core.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iainreid820/fui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/iainreid820/fui/issues"
+  }
+}
