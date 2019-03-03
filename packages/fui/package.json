@@ -11,9 +11,9 @@
   "author": "Iain Reid <iainreid382@gmail.com>",
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
-  "main": "lib/fui.js",
+  "main": "index.js",
   "files": [
-    "lib"
+    "index.js"
   ],
   "dependencies": {
     "@chaff/fui-core": "0.0.1"
