@@ -10,4 +10,11 @@ Under the hood, Fui is built using functional concepts, elements you build are r
 
 At its center, Fui is a templating engine; a respectably lightweight one, written in highly compressible and optimised code, weighing in at just 402 bytes.
 
-Elements are composed using simple JavaScript functions, so there's no need for JSX, or even HTML for that matter.
+Elements are composed using simple JavaScript functions, so there's no need for JSX, or even HTML for that matter. It's simple a case of importing an element, and then invoking it.
+
+```javascript
+import { div } from "@chaff/fui-core"
+
+// A possible wrapper element
+export const myDiv = div.attrs({ class: "wrapper"  })
+```
