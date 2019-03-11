@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es2015",
     "module": "none",
     "strict": true,
     "lib": [
       "dom",
       "es2018"
     ],
-    "esModuleInterop": true
-  }
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"esModuleInterop": true
+	}
 }

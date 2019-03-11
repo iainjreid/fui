@@ -1,10 +1,12 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "./src/main",
     "outDir": "./lib",
     "allowJs": true
-  },
+	},
+	"include": [
+		"./src/main"
+	],
   "exclude": [
     "**/*.spec.ts"
   ]

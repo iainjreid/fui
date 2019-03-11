@@ -3,7 +3,7 @@ const { div, section } = require("../main/fui-core");
 const sdf = text => () => document.createTextNode(text)
 
 const block =
-	div.attrs({ class: "foo" }).add(div.lift(sdf))
+	div.attr("class", "foo").wrap(div.lift(sdf))
 
 const block2 =
 	section.add(block)
