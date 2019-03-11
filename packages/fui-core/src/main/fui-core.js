@@ -1,24 +1,17 @@
 "use strict";
 
-module.exports = ((Object) => ((builder, element, methods) => (
-	element = (args) =>
-		Object.assign(builder(args), methods(args)),
+module.exports = (({assign, entries}, M) => (
+	M = f => assign(f, {
+		attrs: o => M(x => (x = f(x), entries(o).forEach(([k, v]) => x.setAttribute(k, v)), x)),
 
-	methods = ([tag, attrs, props]) => ({
-		attrs: (attrs) => element([tag, attrs, props]),
-		props: (props) => element([tag, attrs, props]),
+		props: o => M(x => (x = f(x), entries(o).forEach(([k, v]) => x[k] = v), x)),
 
-		promote: (fn) => (scope) => fn(scope)
+		add: g => M(x => f(x).appendChild(g(x)).parentNode),
+
+		lift: g => M(x => f(x).appendChild(g(x)(x)).parentNode)
 	}),
 
-	new Proxy(Object, {
-		get: (_, prop) => element([prop, {}, {}])
+	new Proxy(M, {
+		get: (_, prop) => M(() => document.createElement(prop))
 	})
-))(([tag, attrs, props], element) => (element = document.createElement(tag), (content) => (
-	Object.entries(attrs).forEach(([key, value]) => element.setAttribute(key, value)),
-	Object.entries(props).forEach(([key, value]) => element[key] = value),
-
-	typeof content !== "object" && (content = document.createTextNode(content)),
-
-	element.appendChild(content), element
-))))(Object)
+))(Object)
