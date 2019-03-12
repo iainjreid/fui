@@ -8,7 +8,7 @@ Under the hood, Fui is built using functional concepts, elements you build are r
 
 ### Features
 
-At its center, Fui is a templating engine; a respectably lightweight one, written in highly compressible and optimised code, weighing in at just 402 bytes.
+At its center, Fui is a templating engine; a respectably lightweight one, written in highly compressible and optimised code, weighing in at just 329 bytes.
 
 Elements are composed using simple JavaScript functions, so there's no need for JSX, or even HTML for that matter. It's simple a case of importing an element, and then invoking it.
 

@@ -2,12 +2,14 @@ declare const Fui: Record<keyof HTMLElementTagNameMap, Fui.FuiElement>;
 
 declare namespace Fui {
   interface FuiElement {
-    (innerHtml?: string): string;
+    attr: (key: string, value: string) => FuiElement;
+		prop: (key: string, value: string) => FuiElement;
 
-    promote<T>(fn: (scope: T) => string): (scope: T) => string;
+		add: (element: FuiElement) => FuiElement;
 
-    attrs: any;
-    props: any;
+		lift: <T>(fn: (scope: T) => FuiElement) => FuiElement;
+
+		scope: <T>(fn: (scope: any) => T) => FuiElement;
   }
 }
 

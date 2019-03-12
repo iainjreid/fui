@@ -1,17 +1,36 @@
 "use strict";
 
-module.exports = (({assign, entries}, M) => (
-	M = f => assign(f, {
-		attrs: o => M(x => (x = f(x), entries(o).forEach(([k, v]) => x.setAttribute(k, v)), x)),
+module.exports = ((Object, Monot) => (
 
-		props: o => M(x => (x = f(x), entries(o).forEach(([k, v]) => x[k] = v), x)),
+	Monot = f => ((Tap) => Object.assign(f, {
+		attr: (k, v) => Tap((x, fx) => fx.setAttribute(k, v)),
+		prop: (k, v) => Tap((x, fx) => fx[k] = v),
 
-		add: g => M(x => f(x).appendChild(g(x)).parentNode),
+		/**
+		 * Similar to the `map` method in a traditional Reader monad, this method takes the output of the previous function,
+		 * modifies it, and returns it.
+		 */
+		add: g => Tap((x, fx) => fx.appendChild(g(x))),
 
-		lift: g => M(x => f(x).appendChild(g(x)(x)).parentNode)
-	}),
+		/**
+		 * Similiar to the `flatMap`, or `chain` method in a traditional Reader monad, this method takes the output of the
+		 * previous function, and returns a new monad.
+		 */
+		lift: g => Tap((x, fx) => fx.appendChild(g(x)(x))),
 
-	new Proxy(M, {
-		get: (_, prop) => M(() => document.createElement(prop))
+		/**
+		 * Similar to the `local` method in a traditional Reader monad, this method alters the execution environment in
+		 * child compositions will be run under.
+		 */
+		scope: g => Monot(x => f(g(x)))
+	}))(g => Monot(x => (g(x, x = f(x)), x))),
+
+	/**
+	 * The almighty `Proxy` is what gives this rendering engine its true strength. HTML elements are interpreted as they
+	 * are imported, rather than being preconfigured.
+	 */
+	new Proxy(Object, {
+		get: (_, prop) => Monot(() => document.createElement(prop))
 	})
-))(Object)
+
+))(Object);
