@@ -1,6 +1,6 @@
 {
   "name": "@chaff/fui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A functional UI framework",
   "keywords": [
     "functional",
@@ -16,7 +16,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@chaff/fui-core": "^0.0.2"
+    "@chaff/fui-core": "^0.0.3"
   },
   "publishConfig": {
     "access": "public"
