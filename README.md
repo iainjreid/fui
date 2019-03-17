@@ -1,10 +1,14 @@
 # Fui
 
+![Depfu](https://img.shields.io/depfu/iainreid820/fui.svg?style=flat-square)
+
 ## What’s this all about?
 
 Fui is a fresh take on the traditional frontend framework, it’s simple to use, has a tiny footprint, and is blazingly fast!
 
 Under the hood, Fui is built using functional concepts, elements you build are referentially transparent, so wherever or however you create them they'll always be the same.
+
+Checkout [this repository](https://git.io/fjvBY) for a demo!
 
 ### Features
 
