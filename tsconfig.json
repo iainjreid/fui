@@ -7,8 +7,6 @@
       "dom",
       "es2018"
     ],
-		"skipLibCheck": true,
-		"skipDefaultLibCheck": true,
-		"esModuleInterop": true
+    "esModuleInterop": true
 	}
 }

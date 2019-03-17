@@ -1,15 +1,17 @@
-declare const Fui: Record<keyof HTMLElementTagNameMap, Fui.FuiElement>;
+declare const Fui: Record<keyof HTMLElementTagNameMap, Fui.FuiElement<any>>;
 
 declare namespace Fui {
-  interface FuiElement {
-    attr: (key: string, value: string) => FuiElement;
-    prop: (key: string, value: string) => FuiElement;
+  interface FuiElement<E> {
+    (scope?: E): HTMLElement
 
-    add: (element: FuiElement) => FuiElement;
+    attr: (key: string, value: string) => FuiElement<E>;
+    prop: (key: string, value: string) => FuiElement<E>;
 
-    lift: <T>(fn: (scope: T) => FuiElement) => FuiElement;
+    add: (element: FuiElement<E>) => FuiElement<E>;
 
-    scope: <T>(fn: (scope: any) => T) => FuiElement;
+    lift: <T>(fn: (scope: T) => FuiElement<T>) => FuiElement<T>;
+
+    scope: <T>(fn: (scope: any) => T) => FuiElement<E>;
   }
 }
 

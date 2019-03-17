@@ -1,5 +1,6 @@
 # Fui
 
+![npm](https://img.shields.io/npm/v/@chaff/fui.svg?style=flat-square)
 ![Depfu](https://img.shields.io/depfu/iainreid820/fui.svg?style=flat-square)
 
 ## What’s this all about?

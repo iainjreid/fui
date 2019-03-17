@@ -11,6 +11,7 @@
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
   "main": "lib/fui-core.js",
+  "types": "lib/fui-core.d.ts",
   "files": [
     "lib"
   ],
@@ -22,7 +23,7 @@
     "url": "git+https://github.com/iainreid820/fui.git"
   },
   "scripts": {
-    "prepare": "tsc -p .",
+    "prepare": "cp src/main/* lib/",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
