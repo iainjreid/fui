@@ -16,5 +16,5 @@ Elements are composed using simple JavaScript functions, so there's no need for 
 import { div } from "@chaff/fui-core"
 
 // A possible wrapper element
-export const myDiv = div.attrs({ class: "wrapper"  })
+export const myDiv = div.attr("class", "wrapper")
 ```
