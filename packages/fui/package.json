@@ -11,9 +11,8 @@
   "author": "Iain Reid <iainreid382@gmail.com>",
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
-  "main": "index.js",
   "files": [
-    "index.js"
+    "lib"
   ],
   "dependencies": {
     "@chaff/fui-core": "^0.0.3"
@@ -26,6 +25,7 @@
     "url": "git+https://github.com/iainreid820/fui.git"
   },
   "scripts": {
+    "prepare": "node build.js",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
