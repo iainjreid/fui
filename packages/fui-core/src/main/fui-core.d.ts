@@ -2,7 +2,7 @@ declare const Fui: Record<keyof HTMLElementTagNameMap, Fui.FuiElement<any>>;
 
 declare namespace Fui {
   interface FuiElement<E> {
-    (scope?: E): HTMLElement
+    (scope: E): HTMLElement
 
     attr: (key: string, value: string) => FuiElement<E>;
     prop: (key: string, value: string) => FuiElement<E>;
