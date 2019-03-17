@@ -13,7 +13,7 @@ before_deploy: "echo '//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}' > .npm
 
 deploy:
   provider: script
-  script: "npx lerna publish from-package --yes"
+  script: "npx lerna publish from-git --yes"
   skip_cleanup: true
   on:
     branch: master
