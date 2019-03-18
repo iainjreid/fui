@@ -1,0 +1,35 @@
+{
+  "name": "@chaff/fui-globals",
+  "version": "0.0.4",
+  "description": "Globals library for Fui",
+  "keywords": [
+    "functional",
+    "user",
+    "interface"
+  ],
+  "author": "Iain Reid <iainreid382@gmail.com>",
+  "homepage": "https://github.com/iainreid820/fui#readme",
+  "license": "MIT",
+  "main": "lib/fui-globals.js",
+  "types": "lib/fui-globals.d.ts",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@chaff/fui-core": "^0.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iainreid820/fui.git"
+  },
+  "scripts": {
+    "prepare": "mkdir -p lib && cp src/main/* lib/",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/iainreid820/fui/issues"
+  }
+}
