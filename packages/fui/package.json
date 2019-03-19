@@ -12,10 +12,12 @@
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
   "files": [
-    "lib"
+    "core.js",
+    "global.js"
   ],
   "dependencies": {
-    "@chaff/fui-core": "^0.0.4"
+    "@chaff/fui-core": "^0.0.4",
+    "@chaff/fui-global": "^0.0.4"
   },
   "publishConfig": {
     "access": "public"
