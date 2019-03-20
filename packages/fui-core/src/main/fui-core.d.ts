@@ -1,4 +1,4 @@
-declare const Fui: Record<keyof HTMLElementTagNameMap, Fui.FuiElement<any>>;
+declare const Fui: Record<keyof HTMLElementTagNameMap | string, Fui.FuiElement<any>>;
 
 declare namespace Fui {
   interface FuiElement<E> {
