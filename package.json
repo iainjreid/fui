@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "install": "lerna run link",
     "prepare": "lerna run prepare",
     "test": "jest"
   },
@@ -13,7 +14,10 @@
   },
   "jest": {
     "preset": "ts-jest",
-    "collectCoverage": true
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/src/main/**/*.{js,ts}"
+    ]
   },
   "private": true
 }

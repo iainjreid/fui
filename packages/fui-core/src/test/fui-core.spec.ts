@@ -1,13 +1,36 @@
-import { div, section } from "../main/fui-core";
+import { core } from "@chaff/fui-globals";
 
-const block = section.lift<{name: string}>((config) => div.attr("class", config.name))
+core();
 
-const basicUsage = [
-  [block({ name: "foo" }).outerHTML, "<section><div class=\"foo\"></div></section>"],
-]
+const cards = require("../../../../examples/cards");
 
-describe("Basic usage", () => {
-  test.each(basicUsage)("ensure rendered HTML is correct (%#)", (block, html) => {
-    expect(block).toBe(html);
-  })
+describe("fui-core", () => {
+  test("ensure rendered HTML is correct (1)", () => {
+    expect(cards().isEqualNode(stringToDOM(`
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Title 1</h5>
+              <p class="card-text">Text 1</p>
+              <a class="btn btn-primary" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Title 2</h5>
+              <p class="card-text">Text 2</p>
+              <a class="btn btn-primary" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `))).toBeTruthy();
+  });
 });
+
+function stringToDOM(str: string): ChildNode | null {
+  return (new DOMParser()).parseFromString(str.replace(/\s{2,}/g, ""), "text/html").body.firstChild;
+}

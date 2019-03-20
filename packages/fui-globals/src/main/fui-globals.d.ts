@@ -1,1 +1,1 @@
-export function core(window: Window): void;
+export function core<T extends object>(target?: T): void;

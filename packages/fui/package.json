@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "@chaff/fui-core": "^0.0.5",
-    "@chaff/fui-global": "^0.0.4"
+    "@chaff/fui-globals": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

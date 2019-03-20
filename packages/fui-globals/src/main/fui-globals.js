@@ -14,8 +14,8 @@ const elements = [
   "ul", "var", "video", "wbr"
 ];
 
-exports.core = () => {
+exports.core = (target = window) => {
   for (const element of elements) {
-    window[element] = core[element];
+    target[element] = core[element];
   }
 }

@@ -6,6 +6,8 @@ module.exports = ((Object, Monot) => (
     attr: (k, v) => Tap((x, fx) => fx.setAttribute(k, v)),
     prop: (k, v) => Tap((x, fx) => fx[k] = v),
 
+    of: x => Tap((_, fx) => fx.innerHTML = x),
+
 		/**
 		 * Similar to the `map` method in a traditional Reader monad, this method takes the output of the previous function,
 		 * modifies it, and returns it.
