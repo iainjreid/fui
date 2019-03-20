@@ -7,6 +7,8 @@ declare namespace FuiCore {
     attr: (key: string, value: string) => FuiElement<E>;
     prop: (key: string, value: string) => FuiElement<E>;
 
+    of: (text: string) => FuiElement<E>;
+
     add: (element: FuiElement<E>) => FuiElement<E>;
 
     lift: <T>(fn: (scope: T) => FuiElement<T>) => FuiElement<T>;
