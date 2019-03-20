@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "install": "lerna run link",
+    "install": "lerna link",
     "prepare": "lerna run prepare",
     "test": "jest"
   },
