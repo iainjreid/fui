@@ -27,7 +27,6 @@
     "url": "git+https://github.com/iainreid820/fui.git"
   },
   "scripts": {
-    "prepare": "node build.js",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
