@@ -1,6 +1,6 @@
 {
   "name": "@chaff/fui-globals",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Globals library for Fui",
   "keywords": [
     "functional",
@@ -16,7 +16,7 @@
     "lib"
   ],
   "dependencies": {
-    "@chaff/fui-core": "^0.0.5"
+    "@chaff/fui-core": "^0.0.6"
   },
   "publishConfig": {
     "access": "public"

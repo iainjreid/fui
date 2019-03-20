@@ -1,6 +1,6 @@
 {
   "name": "@chaff/fui-core",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Core library for Fui",
   "keywords": [
     "functional",
@@ -16,7 +16,7 @@
     "lib"
   ],
   "devDependencies": {
-    "@chaff/fui-globals": "^0.0.5"
+    "@chaff/fui-globals": "^0.0.6"
   },
   "publishConfig": {
     "access": "public"
