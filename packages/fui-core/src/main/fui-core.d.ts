@@ -1,8 +1,8 @@
-declare const Fui: Record<keyof HTMLElementTagNameMap | string, Fui.FuiElement<any>>;
+declare const FuiCore: Record<keyof HTMLElementTagNameMap | string, FuiCore.FuiElement<any>>;
 
-declare namespace Fui {
+declare namespace FuiCore {
   interface FuiElement<E> {
-    (scope: E): HTMLElement
+    (scope?: E): HTMLElement
 
     attr: (key: string, value: string) => FuiElement<E>;
     prop: (key: string, value: string) => FuiElement<E>;
@@ -15,4 +15,4 @@ declare namespace Fui {
   }
 }
 
-export = Fui;
+export = FuiCore;

@@ -15,9 +15,6 @@
   "files": [
     "lib"
   ],
-  "devDependencies": {
-    "@chaff/fui-globals": "^0.0.6"
-  },
   "publishConfig": {
     "access": "public"
   },
