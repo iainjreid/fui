@@ -1,7 +1,3 @@
-import { core } from "@chaff/fui-globals";
-
-core();
-
 const cards = require("../../../examples/cards");
 
 describe("cards", () => {

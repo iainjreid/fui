@@ -17,7 +17,10 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "**/src/main/**/*.{js,ts}"
-    ]
+    ],
+    "moduleNameMapper": {
+      "@chaff/fui-core": "<rootDir>/packages/fui-core"
+    }
   },
   "private": true
 }
