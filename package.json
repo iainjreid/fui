@@ -19,7 +19,7 @@
       "**/src/main/**/*.{js,ts}"
     ],
     "moduleNameMapper": {
-      "@chaff/fui-core": "<rootDir>/packages/fui-core"
+      "^@chaff/fui-([a-z]+)$": "<rootDir>/packages/fui-$1/"
     }
   },
   "private": true
