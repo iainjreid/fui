@@ -25,8 +25,8 @@ describe("cards", () => {
       </div>
     `))).toBeTruthy();
   });
-});
 
-function stringToDOM(str: string): ChildNode | null {
-  return (new DOMParser()).parseFromString(str.replace(/\s{2,}/g, ""), "text/html").body.firstChild;
-}
+  function stringToDOM(str: string): ChildNode | null {
+    return (new DOMParser()).parseFromString(str.replace(/\s{2,}/g, ""), "text/html").body.firstChild;
+  }
+});

@@ -1,6 +1,6 @@
 "use strict";
 
-const { div, h5, p, a } = require("@chaff/fui-core")
+const { a, div, h5, p } = require("@chaff/fui-core")
 
 const card = (title, text) =>
   div.attr("class", "col-sm-6").add(
