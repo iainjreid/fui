@@ -22,5 +22,6 @@
       "^@chaff/fui-([a-z]+)$": "<rootDir>/packages/fui-$1/"
     }
   },
+  "license": "MIT",
   "private": true
 }
