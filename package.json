@@ -19,7 +19,17 @@
       "**/src/main/**/*.{js,ts}"
     ],
     "moduleNameMapper": {
+      "^@chaff/fui/([a-z]+)$": "<rootDir>/packages/fui/$1",
       "^@chaff/fui-([a-z]+)$": "<rootDir>/packages/fui-$1/"
+    },
+    "globals": {
+      "ts-jest": {
+        "diagnostics": {
+          "ignoreCodes": [
+            "TS151001"
+          ]
+        }
+      }
     }
   },
   "license": "MIT",

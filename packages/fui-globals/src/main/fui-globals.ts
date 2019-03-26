@@ -1,8 +1,8 @@
 "use strict";
 
-const core = require("@chaff/fui-core");
+import * as _html from "@chaff/fui-html";
 
-const elements = [
+const elements: (keyof HTMLElementTagNameMap)[] = [
   "a", "abbr", "address", "applet", "area", "article", "aside", "audio", "b", "base", "basefont", "bdo", "blockquote",
   "br", "button", "canvas", "caption", "cite", "code", "col", "colgroup", "data", "datalist", "dd", "del", "details",
   "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "font", "footer",
@@ -14,8 +14,8 @@ const elements = [
   "ul", "var", "video", "wbr"
 ];
 
-exports.core = (target = window) => {
+export function html(target: any = window) {
   for (const element of elements) {
-    target[element] = core[element];
+    target[element] = _html[element];
   }
 }

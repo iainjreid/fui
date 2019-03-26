@@ -1,7 +1,7 @@
 {
-  "name": "@chaff/fui-core",
+  "name": "@chaff/fui-html",
   "version": "0.0.7",
-  "description": "Core library for Fui",
+  "description": "HTML rendering library for Fui",
   "keywords": [
     "functional",
     "user",
@@ -10,11 +10,14 @@
   "author": "Iain Reid <iainreid382@gmail.com>",
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
-  "main": "./lib/fui-core.js",
-  "types": "./lib/fui-core.d.ts",
+  "main": "./lib/fui-html.js",
+  "types": "./lib/fui-html.d.ts",
   "files": [
     "lib"
   ],
+  "dependencies": {
+    "@chaff/fui-core": "^0.0.7"
+  },
   "publishConfig": {
     "access": "public"
   },

@@ -1,7 +1,7 @@
-import * as core from "@chaff/fui-core";
+import * as html from "@chaff/fui-html";
 import * as globals from "../main/fui-globals";
 
-const elements = [
+const elements: (keyof HTMLElementTagNameMap)[] = [
   "a", "button", "div", "footer", "form", "h1", "h2", "h3", "header", "input", "li", "nav", "p", "table", "ul"
 ];
 
@@ -10,16 +10,16 @@ describe("fui-globals", () => {
     const target = {};
 
     beforeAll(() => {
-      globals.core();
-      globals.core(target);
+      globals.html();
+      globals.html(target);
     });
 
     test.each(elements)("ensure window object contains \"%s\"", (element) => {
-      expect((window as any)[element].toString()).toBe(core[element].toString());
+      expect((window as any)[element].toString()).toBe(html[element].toString());
     });
 
     test.each(elements)("ensure target object contains \"%s\"", (element) => {
-      expect((target as any)[element].toString()).toBe(core[element].toString());
+      expect((target as any)[element].toString()).toBe(html[element].toString());
     });
   });
 });

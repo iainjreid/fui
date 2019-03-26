@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es2015",
     "module": "none",
     "strict": true,
@@ -7,6 +8,22 @@
       "dom",
       "es2018"
     ],
-    "esModuleInterop": true
-  }
+    "declaration": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@chaff/fui-core": [
+        "./packages/fui-core/lib/fui-core"
+      ],
+      "@chaff/fui-globals": [
+        "./packages/fui-globals/lib/fui-globals"
+      ],
+      "@chaff/fui-html": [
+        "./packages/fui-html/lib/fui-html"
+      ]
+    }
+  },
+  "exclude": [
+    "**/lib/**/*",
+    "**/*.spec.ts"
+  ]
 }

@@ -20,7 +20,7 @@ At its center, Fui is a templating engine; a respectably lightweight one, writte
 Elements are composed using simple JavaScript functions, so there's no need for JSX, or even HTML for that matter. It's simple a case of importing an element, and then invoking it.
 
 ```javascript
-import { div } from "@chaff/fui/core"
+import { div } from "@chaff/fui/html"
 
 // A possible wrapper element
 export const myDiv = div.attr("class", "wrapper")

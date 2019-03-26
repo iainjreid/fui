@@ -1,19 +1,21 @@
-declare const FuiCore: Record<keyof HTMLElementTagNameMap | string, FuiCore.FuiElement<any>>;
+declare function FuiCore<Type, Names extends PropertyKey, Methods = {}>(builder: core.FuiBuilder<Type, Names>, methods?: (tap: core.FuiTap<Type, Env, Methods>) => Methods): core.FuiEngine<Type, Names, Methods>;
 
 declare namespace FuiCore {
-  interface FuiElement<E> {
-    (scope?: E): HTMLElement
+  type FuiEngine<Type, Names extends PropertyKey, Methods = {}> = Record<Names, FuiElement<Type, void, Methods> & Methods>;
 
-    attr: (key: string, value: string) => FuiElement<E>;
-    prop: (key: string, value: string) => FuiElement<E>;
+  interface FuiBuilder<Type, Names extends PropertyKey> {
+    build(name: Names): Type
+    append(a: Type, b: Type): void
+  }
 
-    of: (text: string) => FuiElement<E>;
+  type FuiTap<Type, Env, Methods> = (tap: (value: any, target: Type) => void) => FuiElement<Type, Env, Methods> & Methods;
 
-    add: (element: FuiElement<E>) => FuiElement<E>;
+  interface FuiElement<Type, Env, Methods> {
+    (scope?: Env): Type;
 
-    lift: <T>(fn: (scope: T) => FuiElement<T>) => FuiElement<T>;
-
-    scope: <T>(fn: (scope: any) => T) => FuiElement<E>;
+    add: (element: this) => FuiElement<Type, Env, Methods> & Methods;
+    lift: <AltEnv = Env>(fn: (scope: AltEnv) => this) => FuiElement<Type, AltEnv, Methods> & Methods;
+    scope: <NewEnv>(fn: (scope: Env) => NewEnv) => FuiElement<Type, NewEnv, Methods> & Methods;
   }
 }
 

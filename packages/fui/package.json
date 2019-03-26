@@ -13,11 +13,13 @@
   "license": "MIT",
   "files": [
     "core.js",
-    "global.js"
+    "global.js",
+    "html.js"
   ],
   "dependencies": {
     "@chaff/fui-core": "^0.0.7",
-    "@chaff/fui-globals": "^0.0.7"
+    "@chaff/fui-globals": "^0.0.7",
+    "@chaff/fui-html": "^0.0.7"
   },
   "publishConfig": {
     "access": "public"

@@ -10,13 +10,13 @@
   "author": "Iain Reid <iainreid382@gmail.com>",
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
-  "main": "lib/fui-globals.js",
-  "types": "lib/fui-globals.d.ts",
+  "main": "./lib/fui-globals.js",
+  "types": "./lib/fui-globals.d.ts",
   "files": [
     "lib"
   ],
   "dependencies": {
-    "@chaff/fui-core": "^0.0.7"
+    "@chaff/fui-html": "^0.0.7"
   },
   "publishConfig": {
     "access": "public"
@@ -26,7 +26,7 @@
     "url": "git+https://github.com/iainreid820/fui.git"
   },
   "scripts": {
-    "prepare": "mkdir -p lib && cp src/main/* lib/",
+    "prepare": "tsc -p .",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
