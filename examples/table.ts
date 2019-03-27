@@ -10,7 +10,7 @@ const tableHead =
 
 const tableRow = (index: number, first: string, last: string, handle: string) =>
   tr
-    .add(th.attr("scope", "row").text(index))
+    .add(th.attr("scope", "row").text(index.toString()))
     .add(td.text(first))
     .add(td.text(last))
     .add(td.text(handle));
