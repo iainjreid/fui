@@ -15,7 +15,7 @@ Checkout [this repository](https://git.io/fjvBY) for a demo!
 
 ### Features
 
-At its center, Fui is a templating engine; a respectably lightweight one, written in highly compressible and optimised code, weighing in at just 361 bytes.
+At its center, Fui plays host to a simple AST engine; a respectably lightweight one, written in highly compressible and optimised code, weighing in at just 257 bytes.
 
 Elements are composed using simple JavaScript functions, so there's no need for JSX, or even HTML for that matter. It's simple a case of importing an element, and then invoking it.
 
