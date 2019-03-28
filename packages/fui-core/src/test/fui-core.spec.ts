@@ -68,6 +68,34 @@ const checks = [
         children: []
       }]
     }]
+  }],
+
+  [foo.lift((data: string) => bar.data(data)).scope((scope: string) => [scope, scope])("data"), {
+    name: "foo",
+    children: [{
+      name: "bar",
+      data: [
+        "data",
+        "data",
+      ],
+      children: []
+    }]
+  }],
+
+  [foo.lift((data: string) => bar.data(data).lift((data: string) => baz.data(data)).scope((scope: string) => [scope, scope]))("data"), {
+    name: "foo",
+    children: [{
+      name: "bar",
+      data: "data",
+      children: [{
+        name: "baz",
+        data: [
+          "data",
+          "data",
+        ],
+        children: []
+      }]
+    }]
   }]
 ]
 
