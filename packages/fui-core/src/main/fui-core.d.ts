@@ -1,4 +1,4 @@
-declare function FuiCore<Type, Names extends PropertyKey, Methods = {}>(builder: core.FuiBuilder<Type, Names>, methods?: (tap: core.FuiTap<Type, Env, Methods>) => Methods): core.FuiEngine<Type, Names, Methods>;
+declare function FuiCore<Type, Names extends PropertyKey, Methods = {}>(builder: FuiCore.FuiBuilder<Type, Names>, methods?: (tap: FuiCore.FuiTap<Type, Env, Methods>) => Methods): FuiCore.FuiEngine<Type, Names, Methods>;
 
 declare namespace FuiCore {
   type FuiEngine<Type, Names extends PropertyKey, Methods = {}> = Record<Names, FuiElement<Type, void, Methods> & Methods>;
