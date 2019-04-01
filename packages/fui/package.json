@@ -1,6 +1,6 @@
 {
   "name": "@chaff/fui",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A functional UI framework",
   "keywords": [
     "functional",
@@ -17,9 +17,9 @@
     "html.js"
   ],
   "dependencies": {
-    "@chaff/fui-core": "^0.0.9",
-    "@chaff/fui-globals": "^0.0.9",
-    "@chaff/fui-html": "^0.0.9"
+    "@chaff/fui-core": "^0.0.10",
+    "@chaff/fui-globals": "^0.0.10",
+    "@chaff/fui-html": "^0.0.10"
   },
   "publishConfig": {
     "access": "public"
