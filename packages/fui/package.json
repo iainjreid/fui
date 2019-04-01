@@ -13,7 +13,7 @@
   "license": "MIT",
   "files": [
     "core.js",
-    "global.js",
+    "globals.js",
     "html.js"
   ],
   "dependencies": {
