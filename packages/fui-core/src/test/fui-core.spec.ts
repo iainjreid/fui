@@ -2,12 +2,12 @@ import * as core from "../main/fui-core";
 
 interface FuiTestTarget {
   name: string;
-  data?: string;
+  data?: string | string[];
   children: FuiTestTarget[];
 }
 
 interface FuiTestMethods {
-  data(str: string): this
+  data(str: string): this;
 }
 
 const { foo, bar, baz } = core<FuiTestTarget, "foo" | "bar" | "baz", FuiTestMethods>({
@@ -17,8 +17,8 @@ const { foo, bar, baz } = core<FuiTestTarget, "foo" | "bar" | "baz", FuiTestMeth
   append(a: FuiTestTarget, b: FuiTestTarget) {
     return a.children.push(b)
   }
-}, (tap: core.FuiTap<FuiTestTarget, void, FuiTestMethods>) => ({
-  data(str: string) {
+}, (tap: core.FuiTap<FuiTestTarget, string, FuiTestMethods>) => ({
+  data(str: string | string[]) {
     return tap((_, fx) => fx.data = str);
   }
 }));
@@ -48,7 +48,7 @@ const checks = [
     }]
   }],
 
-  [foo.lift((data: string) => bar.data(data))("data"), {
+  [foo.lift<string>((data) => bar.data(data))("data"), {
     name: "foo",
     children: [{
       name: "bar",
@@ -57,7 +57,7 @@ const checks = [
     }]
   }],
 
-  [foo.lift((data: string) => bar.data(data).lift((data: string) => baz.data(data)))("data"), {
+  [foo.lift<string>((data) => bar.data(data).lift<string>((data) => baz.data(data)))("data"), {
     name: "foo",
     children: [{
       name: "bar",
@@ -70,7 +70,7 @@ const checks = [
     }]
   }],
 
-  [foo.lift((data: string) => bar.data(data)).scope((scope: string) => [scope, scope])("data"), {
+  [foo.lift((data) => bar.data(data)).scope<string[]>((scope) => [scope, scope])("data"), {
     name: "foo",
     children: [{
       name: "bar",
