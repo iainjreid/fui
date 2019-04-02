@@ -9,6 +9,7 @@
       "es2018"
     ],
     "declaration": true,
+    "noImplicitAny": true,
     "skipLibCheck": true,
     "paths": {
       "@chaff/fui-core": [
