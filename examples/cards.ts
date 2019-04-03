@@ -1,4 +1,4 @@
-import { a, div, h5, p } from "@chaff/fui-html";
+import { a, div, h5, p } from "@chaff/fui/html";
 
 const card = (title: string, text: string) =>
   div.attr("class", "col-sm-6").add(
