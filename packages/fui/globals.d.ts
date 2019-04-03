@@ -1,1 +1,2 @@
-export * from "@chaff/fui-globals";
+import * as FuiGlobals from "@chaff/fui-globals";
+export = FuiGlobals;

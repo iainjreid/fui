@@ -1,1 +1,2 @@
-export * from "@chaff/fui-html";
+import * as FuiHTML from "@chaff/fui-html";
+export = FuiHTML;
