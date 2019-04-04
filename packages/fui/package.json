@@ -12,8 +12,11 @@
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
   "files": [
+    "core.d.ts",
     "core.js",
+    "globals.d.ts",
     "globals.js",
+    "html.d.ts",
     "html.js"
   ],
   "dependencies": {
