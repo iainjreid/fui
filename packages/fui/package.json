@@ -17,12 +17,15 @@
     "globals.d.ts",
     "globals.js",
     "html.d.ts",
-    "html.js"
+    "html.js",
+    "svg.d.ts",
+    "svg.js"
   ],
   "dependencies": {
     "@chaff/fui-core": "^0.0.13",
     "@chaff/fui-globals": "^0.0.13",
-    "@chaff/fui-html": "^0.0.13"
+    "@chaff/fui-html": "^0.0.13",
+    "@chaff/fui-svg": "^0.0.13"
   },
   "publishConfig": {
     "access": "public"
