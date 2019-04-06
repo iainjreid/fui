@@ -10,7 +10,7 @@
     "jest": "^24.7.1",
     "lerna": "^3.13.1",
     "ts-jest": "^24.0.1",
-    "typescript": "^3.4.1"
+    "typescript": "^3.4.2"
   },
   "jest": {
     "preset": "ts-jest",
