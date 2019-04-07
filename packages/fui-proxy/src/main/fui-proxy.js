@@ -6,7 +6,7 @@ module.exports = (target, methods) => {
   return new Proxy(target, {
     get(obj, prop) {
       if (prop in _methods) {
-        return (...args) => proxy(_methods[prop](...args), methods);
+        return (...args) => module.exports(_methods[prop](...args), methods);
       } else {
         return obj[prop];
       }
