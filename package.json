@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.0",
+    "@types/node": "^11.13.2",
     "jest": "^24.7.1",
     "lerna": "^3.13.1",
     "ts-jest": "^24.0.2",
