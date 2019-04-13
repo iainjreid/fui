@@ -1,6 +1,6 @@
 {
   "name": "@chaff/fui-core",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Core library for Fui",
   "keywords": [
     "functional",

@@ -1,6 +1,6 @@
 {
   "name": "@chaff/fui-proxy",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Proxy library for Fui",
   "keywords": [
     "functional",

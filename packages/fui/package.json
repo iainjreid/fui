@@ -1,6 +1,6 @@
 {
   "name": "@chaff/fui",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A functional UI framework",
   "keywords": [
     "functional",
@@ -24,10 +24,10 @@
     "svg.js"
   ],
   "dependencies": {
-    "@chaff/fui-core": "^0.0.13",
-    "@chaff/fui-globals": "^0.0.13",
-    "@chaff/fui-html": "^0.0.13",
-    "@chaff/fui-svg": "^0.0.13"
+    "@chaff/fui-core": "^0.0.14",
+    "@chaff/fui-globals": "^0.0.14",
+    "@chaff/fui-html": "^0.0.14",
+    "@chaff/fui-svg": "^0.0.14"
   },
   "publishConfig": {
     "access": "public"
