@@ -27,6 +27,7 @@
     "@chaff/fui-core": "^0.0.16",
     "@chaff/fui-globals": "^0.0.16",
     "@chaff/fui-html": "^0.0.16",
+    "@chaff/fui-proxy": "^0.0.16",
     "@chaff/fui-svg": "^0.0.16"
   },
   "publishConfig": {
