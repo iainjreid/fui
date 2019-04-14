@@ -7,7 +7,7 @@
     "user",
     "interface"
   ],
-  "author": "Iain Reid <iainreid382@gmail.com>",
+  "author": "Iain Reid <iainreid382@gmail.com> (https://chaff.land)",
   "homepage": "https://git.io/fjmrc",
   "license": "MIT",
   "main": "./lib/fui-globals.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://git.io/fjmrO"
+    "url": "https://git.io/fjmrO"
   },
   "scripts": {
     "prepare": "tsc -p .",

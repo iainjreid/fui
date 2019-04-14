@@ -7,7 +7,7 @@
     "user",
     "interface"
   ],
-  "author": "Iain Reid <iainreid382@gmail.com>",
+  "author": "Iain Reid <iainreid382@gmail.com> (https://chaff.land)",
   "homepage": "https://git.io/fjmrn",
   "license": "MIT",
   "main": "./lib/fui-core.js",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://git.io/fjmrO"
+    "url": "https://git.io/fjmrO"
   },
   "scripts": {
     "prepare": "mkdir -p lib && cp src/main/* lib/",
