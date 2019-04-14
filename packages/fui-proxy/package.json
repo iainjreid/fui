@@ -11,6 +11,7 @@
   "homepage": "https://github.com/iainreid820/fui#readme",
   "license": "MIT",
   "main": "./lib/fui-proxy.js",
+  "types": "./lib/fui-proxy.d.ts",
   "files": [
     "lib"
   ],
