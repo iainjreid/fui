@@ -1,6 +1,6 @@
 {
   "name": "@chaff/fui-svg",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "SVG rendering library for Fui",
   "keywords": [
     "functional",
@@ -16,7 +16,7 @@
     "lib"
   ],
   "dependencies": {
-    "@chaff/fui-core": "^0.0.14"
+    "@chaff/fui-core": "^0.0.15"
   },
   "publishConfig": {
     "access": "public"
