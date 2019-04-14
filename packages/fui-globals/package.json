@@ -8,7 +8,7 @@
     "interface"
   ],
   "author": "Iain Reid <iainreid382@gmail.com>",
-  "homepage": "https://github.com/iainreid820/fui#readme",
+  "homepage": "https://git.io/fjmrc",
   "license": "MIT",
   "main": "./lib/fui-globals.js",
   "types": "./lib/fui-globals.d.ts",
@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iainreid820/fui.git"
+    "url": "git+https://git.io/fjmrO"
   },
   "scripts": {
     "prepare": "tsc -p .",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/iainreid820/fui/issues"
+    "url": "https://git.io/fjmrY"
   }
 }

@@ -9,7 +9,7 @@
     "framework"
   ],
   "author": "Iain Reid <iainreid382@gmail.com>",
-  "homepage": "https://github.com/iainreid820/fui#readme",
+  "homepage": "https://git.io/fjmrG",
   "license": "MIT",
   "files": [
     "core.d.ts",
@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iainreid820/fui.git"
+    "url": "git+https://git.io/fjmrO"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/iainreid820/fui/issues"
+    "url": "https://git.io/fjmrY"
   }
 }
