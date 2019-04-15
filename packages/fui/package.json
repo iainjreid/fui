@@ -18,6 +18,8 @@
     "globals.js",
     "html.d.ts",
     "html.js",
+    "proxy.d.ts",
+    "proxy.js",
     "svg.d.ts",
     "svg.js"
   ],
