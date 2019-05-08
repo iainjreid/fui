@@ -12,6 +12,9 @@
   <a href="https://codecov.io/gh/iainreid820/fui">
     <img src="https://img.shields.io/codecov/c/github/iainreid820/fui.svg?style=flat-square" />
   </a>
+  <a href="https://lgtm.com/projects/g/iainreid820/fui">
+    <img src="https://img.shields.io/lgtm/grade/javascript/github/iainreid820/fui.svg?style=flat-square">
+  </a>
 
   <img src="https://img.shields.io/depfu/iainreid820/fui.svg?style=flat-square" />
 </p>
