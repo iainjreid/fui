@@ -34,8 +34,12 @@ At its center, Fui plays host to a simple AST engine; a respectably lightweight 
 Elements are composed using simple JavaScript functions, so there's no need for JSX, or even HTML for that matter. It's simple a case of importing an element, and then invoking it.
 
 ```javascript
-import { div } from "@chaff/fui/html"
+import { div } from "@chaff/fui/html";
 
 // A possible wrapper element
-export const myDiv = div.attr("class", "wrapper")
+export const myDiv = div.attr("class", "wrapper");
 ```
+
+## License
+
+This project is released under the [MIT License](./LICENSE). Enjoy responsibly ✌️
