@@ -6,17 +6,17 @@
   <a href="https://www.npmjs.com/package/@chaff/fui">
     <img src="https://img.shields.io/npm/v/@chaff/fui.svg?style=flat-square" />
   </a>
-  <a href="https://travis-ci.org/iainreid820/fui">
-    <img src="https://img.shields.io/travis/iainreid820/fui/master.svg?style=flat-square" />
+  <a href="https://travis-ci.org/Chaffity/fui">
+    <img src="https://img.shields.io/travis/Chaffity/fui/master.svg?style=flat-square" />
   </a>
-  <a href="https://codecov.io/gh/iainreid820/fui">
-    <img src="https://img.shields.io/codecov/c/github/iainreid820/fui.svg?style=flat-square" />
+  <a href="https://codecov.io/gh/Chaffity/fui">
+    <img src="https://img.shields.io/codecov/c/github/Chaffity/fui.svg?style=flat-square" />
   </a>
-  <a href="https://lgtm.com/projects/g/iainreid820/fui">
-    <img src="https://img.shields.io/lgtm/grade/javascript/github/iainreid820/fui.svg?style=flat-square">
+  <a href="https://lgtm.com/projects/g/Chaffity/fui">
+    <img src="https://img.shields.io/lgtm/grade/javascript/github/Chaffity/fui.svg?style=flat-square">
   </a>
 
-  <img src="https://img.shields.io/depfu/iainreid820/fui.svg?style=flat-square" />
+  <img src="https://img.shields.io/depfu/Chaffity/fui.svg?style=flat-square" />
 </p>
 
 ## What’s this all about?
