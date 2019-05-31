@@ -1,4 +1,5 @@
 {
+  "name": "fui",
   "scripts": {
     "install": "lerna link",
     "prepare": "lerna run prepare",
