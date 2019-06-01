@@ -104,7 +104,7 @@ const checks = [
 ]
 
 describe("fui-core", () => {
-  test.each(checks)("ensure tree is correct (%#)", (actual, extected) => {
-    expect(actual).toEqual(extected);
+  test.each(checks)("ensure tree is correct (%#)", (actual, expected) => {
+    expect(actual).toEqual(expected);
   });
 });
