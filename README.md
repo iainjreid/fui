@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./.oratory/logo.png" width="460px" />
+  <img src="https://cdn.jsdelivr.net/gh/chaffity/.github@master/assets/fui-logo.png" width="460px" />
 </p>
 
 <p align="center">
