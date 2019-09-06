@@ -1,6 +1,6 @@
 {
   "name": "@chaffity/fui-html",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "HTML rendering library for Fui",
   "keywords": [
     "functional",
@@ -16,7 +16,7 @@
     "lib"
   ],
   "dependencies": {
-    "@chaffity/fui-core": "^0.0.17"
+    "@chaffity/fui-core": "^0.0.18"
   },
   "publishConfig": {
     "access": "public"
