@@ -12,8 +12,8 @@
     "noImplicitAny": true,
     "skipLibCheck": true,
     "paths": {
-      "@chaff/fui/html": [
-        "./packages/fui/html"
+      "@chaff/fui": [
+        "./packages/fui"
       ],
       "@chaff/fui-core": [
         "./packages/fui-core/lib/fui-core"

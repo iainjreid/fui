@@ -1,1 +1,1 @@
-module.exports = require("@chaff/fui-svg");
+module.exports = require('@chaff/fui-svg');

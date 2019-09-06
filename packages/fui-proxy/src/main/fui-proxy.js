@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 module.exports = (target, methods) => {
   const _methods = methods(target);

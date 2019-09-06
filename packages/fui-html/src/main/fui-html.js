@@ -1,4 +1,6 @@
-const core = require("@chaff/fui-core");
+'use strict';
+
+const core = require('@chaff/fui-core');
 
 module.exports = core({
   build(prop) {

@@ -1,1 +1,1 @@
-module.exports = require("@chaff/fui-html");
+module.exports = require('@chaff/fui-html');

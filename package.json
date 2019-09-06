@@ -1,37 +1,30 @@
 {
-  "name": "fui",
+  "name": "fui-monorepo",
   "scripts": {
     "install": "lerna link",
+    "lint": "eslint .",
     "prepare": "lerna run prepare",
     "test": "jest"
   },
   "devDependencies": {
+    "@emphori/eslint-config": "^0.1.3",
+    "@emphori/jest-preset": "0.0.2",
     "@types/jest": "^24.0.18",
     "@types/node": "^11.13.10",
+    "eslint": "^6.3.0",
     "jest": "^24.9.0",
     "lerna": "^3.16.4",
     "ts-jest": "^24.0.2",
     "typescript": "^3.6.2"
   },
-  "jest": {
-    "preset": "ts-jest",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "**/src/main/**/*.{js,ts}"
-    ],
-    "moduleNameMapper": {
-      "^@chaff/fui/([a-z]+)$": "<rootDir>/packages/fui/$1",
-      "^@chaff/fui-([a-z]+)$": "<rootDir>/packages/fui-$1/"
-    },
-    "globals": {
-      "ts-jest": {
-        "diagnostics": {
-          "ignoreCodes": [
-            "TS151001"
-          ]
-        }
-      }
+  "eslintConfig": {
+    "extends": "@emphori",
+    "rules": {
+      "no-param-reassign": "warn"
     }
+  },
+  "jest": {
+    "preset": "@emphori/jest-preset"
   },
   "license": "MIT",
   "private": true

@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-module.exports = ({ build, append }, methods = () => {}) => ((core) => (
+module.exports = ({ build, append }, methods = (() => {})) => ((core) => (
 
   core = f => ((tap) => Object.assign(f, {
     ...methods(tap),

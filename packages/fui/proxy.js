@@ -1,1 +1,1 @@
-module.exports = require("@chaff/fui-proxy");
+module.exports = require('@chaff/fui-proxy');
