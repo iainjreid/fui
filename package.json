@@ -20,7 +20,9 @@
   "eslintConfig": {
     "extends": "@emphori",
     "rules": {
-      "no-param-reassign": "warn"
+      "no-empty-function": "off",
+      "no-param-reassign": "off",
+      "valid-jsdoc": "off"
     }
   },
   "jest": {

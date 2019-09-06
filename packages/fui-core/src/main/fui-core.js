@@ -1,8 +1,8 @@
 'use strict';
 
-module.exports = ({ build, append }, methods = (() => {})) => ((core) => (
+module.exports = ({ build, append }, methods = (() => {})) => {
 
-  core = f => ((tap) => Object.assign(f, {
+  const core = f => ((tap) => Object.assign(f, {
     ...methods(tap),
 
     /**
@@ -21,15 +21,14 @@ module.exports = ({ build, append }, methods = (() => {})) => ((core) => (
      * Similar to the `local` method in a traditional Reader monad, this method alters the execution environment in
      * child compositions will be run under.
      */
-    scope: g => core(x => f(g(x)))
-  }))(g => core(x => (g(x, x = f(x)), x))),
+    scope: g => core(x => f(g(x))),
+  }))(g => core(x => (g(x, x = f(x)), x)));
 
   /**
    * The almighty `Proxy` is what gives this rendering engine its true strength. HTML elements are interpreted as they
    * are imported, rather than being preconfigured.
    */
-  new Proxy(core, {
-    get: (_, prop) => core(() => build(prop))
+  return new Proxy(core, {
+    get: (_, prop) => core(() => build(prop)),
   })
-
-))();
+};

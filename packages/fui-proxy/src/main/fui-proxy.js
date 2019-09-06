@@ -10,6 +10,6 @@ module.exports = (target, methods) => {
       } else {
         return obj[prop];
       }
-    }
+    },
   });
 }
