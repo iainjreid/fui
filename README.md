@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@chaff/fui">
-    <img src="https://img.shields.io/npm/v/@chaff/fui.svg?style=flat-square" />
+  <a href="https://www.npmjs.com/package/@chaffity/fui">
+    <img src="https://img.shields.io/npm/v/@chaffity/fui.svg?style=flat-square" />
   </a>
   <a href="https://travis-ci.org/Chaffity/fui">
     <img src="https://img.shields.io/travis/Chaffity/fui/master.svg?style=flat-square" />
@@ -34,7 +34,7 @@ At its center, Fui plays host to a simple AST engine; a respectably lightweight 
 Elements are composed using simple JavaScript functions, so there's no need for JSX, or even HTML for that matter. It's simple a case of importing an element, and then invoking it.
 
 ```javascript
-import { div } from "@chaff/fui/html";
+import { div } from "@chaffity/fui/html";
 
 // A possible wrapper element
 export const myDiv = div.attr("class", "wrapper");

@@ -1,2 +1,2 @@
-import * as FuiProxy from "@chaff/fui-proxy";
+import * as FuiProxy from "@chaffity/fui-proxy";
 export = FuiProxy;

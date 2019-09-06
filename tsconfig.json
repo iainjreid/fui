@@ -12,16 +12,16 @@
     "noImplicitAny": true,
     "skipLibCheck": true,
     "paths": {
-      "@chaff/fui": [
+      "@chaffity/fui": [
         "./packages/fui"
       ],
-      "@chaff/fui-core": [
+      "@chaffity/fui-core": [
         "./packages/fui-core/lib/fui-core"
       ],
-      "@chaff/fui-globals": [
+      "@chaffity/fui-globals": [
         "./packages/fui-globals/lib/fui-globals"
       ],
-      "@chaff/fui-html": [
+      "@chaffity/fui-html": [
         "./packages/fui-html/lib/fui-html"
       ]
     }

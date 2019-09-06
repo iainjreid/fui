@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('@chaff/fui-globals');
+module.exports = require('@chaffity/fui-globals');

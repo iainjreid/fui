@@ -1,4 +1,4 @@
-import * as html from "@chaff/fui-html";
+import * as html from "@chaffity/fui-html";
 import * as globals from "../main/fui-globals";
 
 const elements: (keyof HTMLElementTagNameMap)[] = [

@@ -1,4 +1,4 @@
-import { FuiEngine, FuiMethods } from "@chaff/fui-core";
+import { FuiEngine, FuiMethods } from "@chaffity/fui-core";
 
 declare interface FuiHTMLMethods {
   text(str: string): this

@@ -1,6 +1,6 @@
 "use strict";
 
-import * as _html from "@chaff/fui-html";
+import * as _html from "@chaffity/fui-html";
 
 const elements: (keyof HTMLElementTagNameMap)[] = [
   "a", "abbr", "address", "applet", "area", "article", "aside", "audio", "b", "base", "basefont", "bdo", "blockquote",

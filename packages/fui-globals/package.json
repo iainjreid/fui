@@ -1,5 +1,5 @@
 {
-  "name": "@chaff/fui-globals",
+  "name": "@chaffity/fui-globals",
   "version": "0.0.17",
   "description": "Globals library for Fui",
   "keywords": [
@@ -16,7 +16,7 @@
     "lib"
   ],
   "dependencies": {
-    "@chaff/fui-html": "^0.0.17"
+    "@chaffity/fui-html": "^0.0.17"
   },
   "publishConfig": {
     "access": "public"

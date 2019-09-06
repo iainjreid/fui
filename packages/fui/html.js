@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('@chaff/fui-html');
+module.exports = require('@chaffity/fui-html');

@@ -1,2 +1,2 @@
-import * as FuiSVG from "@chaff/fui-svg";
+import * as FuiSVG from "@chaffity/fui-svg";
 export = FuiSVG;
