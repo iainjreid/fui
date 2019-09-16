@@ -9,7 +9,7 @@
     "framework"
   ],
   "author": "Iain Reid <iainreid382@gmail.com> (https://chaff.land)",
-  "homepage": "https://git.io/fjmrG",
+  "homepage": "https://github.com/Chaffity/fui#readme",
   "license": "MIT",
   "files": [
     "core.d.ts",
@@ -35,12 +35,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.io/fjmrO"
+    "url": "https://github.com/Chaffity/fui.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://git.io/fjmrY"
-  }
+    "url": "https://github.com/Chaffity/fui/issues"
+  },
+  "gitHead": "e7d5c04a9e06892e42690baec91877d0e12479ed"
 }
