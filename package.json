@@ -26,7 +26,10 @@
     }
   },
   "jest": {
-    "preset": "@emphori/jest-preset"
+    "preset": "@emphori/jest-preset",
+    "collectCoverageFrom": [
+      "packages/*/lib/*.js"
+    ]
   },
   "license": "MIT",
   "private": true
