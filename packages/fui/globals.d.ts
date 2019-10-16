@@ -1,2 +1,2 @@
-import * as FuiGlobals from "@chaffity/fui-globals";
+import * as FuiGlobals from "@emphori/fui-globals";
 export = FuiGlobals;

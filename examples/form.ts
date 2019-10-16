@@ -1,4 +1,4 @@
-import { button, div, form, input, label, small } from "@chaffity/fui-html";
+import { button, div, form, input, label, small } from "@emphori/fui-html";
 
 const formEmail =
   div.attr("class", "form-group")

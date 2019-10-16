@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('@chaffity/fui-svg');
+module.exports = require('@emphori/fui-svg');

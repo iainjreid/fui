@@ -1,2 +1,2 @@
-import * as FuiCore from "@chaffity/fui-core";
+import * as FuiCore from "@emphori/fui-core";
 export = FuiCore;

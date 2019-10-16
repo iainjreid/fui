@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('@chaffity/fui-proxy');
+module.exports = require('@emphori/fui-proxy');

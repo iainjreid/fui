@@ -1,22 +1,22 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/chaffity/.github@master/assets/fui-logo.png" width="460px" />
+  <img src="https://cdn.jsdelivr.net/gh/emphori/.github@master/assets/fui-logo.png" width="460px" />
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@chaffity/fui">
-    <img src="https://img.shields.io/npm/v/@chaffity/fui.svg?style=flat-square" />
+  <a href="https://www.npmjs.com/package/@emphori/fui">
+    <img src="https://img.shields.io/npm/v/@emphori/fui.svg?style=flat-square" />
   </a>
-  <a href="https://travis-ci.org/Chaffity/fui">
-    <img src="https://img.shields.io/travis/Chaffity/fui/master.svg?style=flat-square" />
+  <a href="https://travis-ci.org/Emphori/fui">
+    <img src="https://img.shields.io/travis/Emphori/fui/master.svg?style=flat-square" />
   </a>
-  <a href="https://codecov.io/gh/Chaffity/fui">
-    <img src="https://img.shields.io/codecov/c/github/Chaffity/fui.svg?style=flat-square" />
+  <a href="https://codecov.io/gh/Emphori/fui">
+    <img src="https://img.shields.io/codecov/c/github/Emphori/fui.svg?style=flat-square" />
   </a>
-  <a href="https://lgtm.com/projects/g/Chaffity/fui">
-    <img src="https://img.shields.io/lgtm/grade/javascript/github/Chaffity/fui.svg?style=flat-square">
+  <a href="https://lgtm.com/projects/g/Emphori/fui">
+    <img src="https://img.shields.io/lgtm/grade/javascript/github/Emphori/fui.svg?style=flat-square">
   </a>
 
-  <img src="https://img.shields.io/depfu/Chaffity/fui.svg?style=flat-square" />
+  <img src="https://img.shields.io/depfu/Emphori/fui.svg?style=flat-square" />
 </p>
 
 ## What’s this all about?
@@ -34,7 +34,7 @@ At its center, Fui plays host to a simple AST engine; a respectably lightweight 
 Elements are composed using simple JavaScript functions, so there's no need for JSX, or even HTML for that matter. It's simple a case of importing an element, and then invoking it.
 
 ```javascript
-import { div } from "@chaffity/fui/html";
+import { div } from "@emphori/fui/html";
 
 // A possible wrapper element
 export const myDiv = div.attr("class", "wrapper");

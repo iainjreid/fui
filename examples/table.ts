@@ -1,4 +1,4 @@
-import { table, tbody, td, th, thead, tr } from "@chaffity/fui-html";
+import { table, tbody, td, th, thead, tr } from "@emphori/fui-html";
 
 const tableHead =
   thead.add(tr
