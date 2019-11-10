@@ -9,7 +9,7 @@
   "devDependencies": {
     "@emphori/eslint-config": "^0.1.7",
     "@emphori/jest-preset": "0.0.2",
-    "@types/jest": "^24.0.21",
+    "@types/jest": "^24.0.22",
     "@types/node": "^11.13.22",
     "eslint": "^6.6.0",
     "jest": "^24.9.0",
