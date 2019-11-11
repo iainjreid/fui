@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/emphori/.github@master/assets/fui-logo.png" width="460px" />
-</p>
+<img src="./assets/header.svg">
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@emphori/fui">

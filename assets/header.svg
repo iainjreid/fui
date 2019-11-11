@@ -1,0 +1,16 @@
+<svg width="100%" height="10rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="background" primitiveUnits="objectBoundingBox">
+      <feFlood x="0" y="1" width="1" height="0.1" flood-color="pink" result="underline"></feFlood>
+      <feMerge>
+        <feMergeNode in="underline"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g>
+    <text x="0" y="50%" font-size="2rem" font-family="Karla, sans-serif" style="color: black" filter="url(#background)" textLength="45">fui</text>
+    <text x="0" y="68%" font-size=".8rem" font-family="Karla, sans-serif" style="color: black" filter="url(#background)" textLength="40">2.4.1</text>
+  </g>
+</svg>
