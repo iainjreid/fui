@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/emphori/fui@master/.github/logo.png" width="200px" />
+  <img src="https://cdn.jsdelivr.net/gh/emphori/fui@master/.github/logo-60x122@2x.png" width="60px" />
 </p>
 
 <p align="center">
