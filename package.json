@@ -1,5 +1,6 @@
 {
-  "name": "fui-monorepo",
+  "name": "fui",
+  "description": "A functional UI framework",
   "scripts": {
     "install": "lerna link",
     "lint": "eslint .",
