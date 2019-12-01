@@ -15,8 +15,6 @@
   <a href="https://lgtm.com/projects/g/Emphori/fui">
     <img src="https://img.shields.io/lgtm/grade/javascript/github/Emphori/fui.svg?style=flat-square">
   </a>
-
-  <img src="https://img.shields.io/depfu/Emphori/fui.svg?style=flat-square" />
 </p>
 
 ## What’s this all about?
