@@ -31,18 +31,24 @@ Checkout [this repository](https://git.io/fjvBY) for a demo!
 ### Features
 
 At its center, Fui plays host to a simple AST engine; a respectably lightweight
-one, written in highly compressible and optimised code, weighing in at just 257
+one, written in highly compressible and optimised code, weighing in at just 396
 bytes.
 
 Elements are composed using simple JavaScript functions, so there's no need for
-JSX, or even HTML for that matter. It's simple a case of importing an element,
-and then invoking it.
+JSX, or even HTML for that matter. Using elements is simply a case of importing
+the composition, and then invoking it.
 
 ```javascript
-import { div } from "@emphori/fui/html";
+const { div } = require("@emphori/fui/html");
 
-// A possible wrapper element
-export const myDiv = div.attr("class", "wrapper");
+// A possible component
+const myWrapper = div.attr("class", "wrapper");
+
+// Generate the DOM element
+const elem = myWrapper();
+
+// Append the element
+document.body.appendChild(elem);
 ```
 
 ## License
