@@ -1,4 +1,4 @@
-const cards = require("../../../examples/cards");
+const cards = require("../../../samples/cards");
 
 describe("cards", () => {
   test("ensure rendered HTML is correct", () => {

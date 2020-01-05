@@ -1,4 +1,4 @@
-const form = require("../../../examples/form");
+const form = require("../../../samples/form");
 
 describe("form", () => {
   test("ensure rendered HTML is correct", () => {

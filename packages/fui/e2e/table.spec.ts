@@ -1,4 +1,4 @@
-const table = require("../../../examples/table");
+const table = require("../../../samples/table");
 
 describe("table", () => {
   test("ensure rendered HTML is correct", () => {
