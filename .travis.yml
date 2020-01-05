@@ -3,11 +3,8 @@ language: node_js
 node_js:
   - lts/*
 
-before_install:
-  - bash <(curl -s https://codecov.io/bash)
-
 after_script:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
 
 before_deploy:
   - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
