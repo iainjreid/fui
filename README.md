@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/travis/Emphori/fui/master.svg?style=flat-square" />
   </a>
   <a href="https://codecov.io/gh/Emphori/fui">
-    <img src="https://img.shields.io/codecov/c/github/Emphori/fui.svg?style=flat-square" />
+    <img src="https://img.shields.io/coveralls/github/Emphori/fui.svg?style=flat-square" />
   </a>
   <a href="https://lgtm.com/projects/g/Emphori/fui">
     <img src="https://img.shields.io/lgtm/grade/javascript/github/Emphori/fui.svg?style=flat-square">
