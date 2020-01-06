@@ -1,6 +1,6 @@
 {
   "name": "@emphori/fui-globals",
-  "version": "0.0.18",
+  "version": "0.1.0",
   "description": "Globals library for Fui",
   "keywords": [
     "functional",
@@ -16,7 +16,7 @@
     "lib"
   ],
   "dependencies": {
-    "@emphori/fui-html": "^0.0.18"
+    "@emphori/fui-html": "^0.1.0"
   },
   "publishConfig": {
     "access": "public"

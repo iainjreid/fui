@@ -1,6 +1,6 @@
 {
   "name": "@emphori/fui-core",
-  "version": "0.0.18",
+  "version": "0.1.0",
   "description": "Core library for Fui",
   "keywords": [
     "functional",

@@ -1,6 +1,6 @@
 {
   "name": "@emphori/fui-proxy",
-  "version": "0.0.18",
+  "version": "0.1.0",
   "description": "Proxy library for Fui",
   "keywords": [
     "functional",

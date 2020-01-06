@@ -1,6 +1,6 @@
 {
   "name": "@emphori/fui",
-  "version": "0.0.18",
+  "version": "0.1.0",
   "description": "A functional UI framework",
   "keywords": [
     "functional",
@@ -24,11 +24,11 @@
     "svg.js"
   ],
   "dependencies": {
-    "@emphori/fui-core": "^0.0.18",
-    "@emphori/fui-globals": "^0.0.18",
-    "@emphori/fui-html": "^0.0.18",
-    "@emphori/fui-proxy": "^0.0.18",
-    "@emphori/fui-svg": "^0.0.18"
+    "@emphori/fui-core": "^0.1.0",
+    "@emphori/fui-globals": "^0.1.0",
+    "@emphori/fui-html": "^0.1.0",
+    "@emphori/fui-proxy": "^0.1.0",
+    "@emphori/fui-svg": "^0.1.0"
   },
   "publishConfig": {
     "access": "public"
