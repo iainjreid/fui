@@ -1,15 +1,17 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/emphori/fui@master/.github/logo-67x122@2x.png" width="67px" />
+  <a href="#">
+    <img src="https://cdn.jsdelivr.net/gh/emphori/fui@master/.github/logo-67x122@2x.png" width="67px" />
+  </a>
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@emphori/fui">
     <img src="https://img.shields.io/npm/v/@emphori/fui.svg?style=flat-square" />
   </a>
-  <a href="https://travis-ci.org/Emphori/fui">
-    <img src="https://img.shields.io/travis/Emphori/fui/master.svg?style=flat-square" />
+  <a href="#">
+    <img src="https://img.shields.io/github/workflow/status/Emphori/fui/Build.svg?style=flat-square" />
   </a>
-  <a href="https://codecov.io/gh/Emphori/fui">
+  <a href="https://coveralls.io/github/Emphori/fui">
     <img src="https://img.shields.io/coveralls/github/Emphori/fui.svg?style=flat-square" />
   </a>
   <a href="https://lgtm.com/projects/g/Emphori/fui">
