@@ -1,4 +1,4 @@
-import { svg } from "../main/fui-svg";
+import { svg } from "../..";
 
 describe("fui-svg", () => {
   test("ensure nodes are correct (1)", () => {

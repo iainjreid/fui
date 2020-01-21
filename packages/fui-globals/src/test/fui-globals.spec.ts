@@ -1,12 +1,9 @@
 import * as html from "@emphori/fui-html";
-import * as globals from "../main/fui-globals";
-
-const elements: (keyof HTMLElementTagNameMap)[] = [
-  "a", "button", "div", "footer", "form", "h1", "h2", "h3", "header", "input", "li", "nav", "p", "table", "ul"
-];
+import * as svg from "@emphori/fui-svg";
+import * as globals from "../..";
 
 describe("fui-globals", () => {
-  describe("core", () => {
+  describe("html", () => {
     const target = {};
 
     beforeAll(() => {
@@ -14,12 +11,29 @@ describe("fui-globals", () => {
       globals.html(target);
     });
 
-    test.each(elements)("ensure window object contains \"%s\"", (element) => {
+    test.each(globals.htmlElementNames)("ensure window object contains \"%s\"", (element) => {
       expect((window as any)[element].toString()).toBe(html[element].toString());
     });
 
-    test.each(elements)("ensure target object contains \"%s\"", (element) => {
+    test.each(globals.htmlElementNames)("ensure target object contains \"%s\"", (element) => {
       expect((target as any)[element].toString()).toBe(html[element].toString());
+    });
+  });
+
+  describe("svg", () => {
+    const target = {};
+
+    beforeAll(() => {
+      globals.svg();
+      globals.svg(target);
+    });
+
+    test.each(globals.svgElementNames)("ensure window object contains \"%s\"", (element) => {
+      expect((window as any)[element].toString()).toBe(svg[element].toString());
+    });
+
+    test.each(globals.svgElementNames)("ensure target object contains \"%s\"", (element) => {
+      expect((target as any)[element].toString()).toBe(svg[element].toString());
     });
   });
 });

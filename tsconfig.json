@@ -23,6 +23,9 @@
       ],
       "@emphori/fui-html": [
         "./packages/fui-html/lib/fui-html"
+      ],
+      "@emphori/fui-svg": [
+        "./packages/fui-svg/lib/fui-svg"
       ]
     }
   },

@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "rootDir": "./src/main",
+    "outDir": "./lib",
+    "esModuleInterop": true
+  }
+}

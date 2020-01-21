@@ -1,8 +1,7 @@
-"use strict";
-
 import * as _html from "@emphori/fui-html";
+import * as _svg from "@emphori/fui-svg";
 
-const elements: (keyof HTMLElementTagNameMap)[] = [
+export const htmlElementNames: (keyof HTMLElementTagNameMap)[] = [
   "a", "abbr", "address", "applet", "area", "article", "aside", "audio", "b", "base", "basefont", "bdo", "blockquote",
   "br", "button", "canvas", "caption", "cite", "code", "col", "colgroup", "data", "datalist", "dd", "del", "details",
   "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "font", "footer",
@@ -14,8 +13,24 @@ const elements: (keyof HTMLElementTagNameMap)[] = [
   "ul", "var", "video", "wbr"
 ];
 
+export const svgElementNames: (keyof SVGElementTagNameMap)[] = [
+  "a", "circle", "clipPath", "defs", "desc", "ellipse", "feBlend", "feColorMatrix", "feComponentTransfer",
+  "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feFlood", "feFuncA",
+  "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset",
+  "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence", "filter", "foreignObject", "g",
+  "image", "line", "linearGradient", "marker", "mask", "metadata", "path", "pattern", "polygon", "polyline",
+  "radialGradient", "rect", "script", "stop", "style", "svg", "switch", "symbol", "text", "textPath", "title", "tspan",
+  "use", "view"
+];
+
 export function html(target: any = window) {
-  for (const element of elements) {
-    target[element] = _html[element];
+  for (const htmlElementName of htmlElementNames) {
+    target[htmlElementName] = _html[htmlElementName];
+  }
+}
+
+export function svg(target: any = window) {
+  for (const svgElementName of svgElementNames) {
+    target[svgElementName] = _svg[svgElementName];
   }
 }

@@ -16,7 +16,8 @@
     "lib"
   ],
   "dependencies": {
-    "@emphori/fui-html": "^0.1.1"
+    "@emphori/fui-html": "^0.1.1",
+    "@emphori/fui-svg": "^0.1.1"
   },
   "publishConfig": {
     "access": "public"

@@ -26,7 +26,7 @@
     "url": "https://github.com/Emphori/fui.git"
   },
   "scripts": {
-    "prepare": "mkdir -p lib && cp src/main/* lib/",
+    "prepare": "tsc -p .",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

@@ -1,4 +1,4 @@
-import * as core from "../main/fui-core";
+import { core, FuiTap, FuiElement } from "../..";
 
 interface FuiTestTarget {
   name: string;
@@ -7,7 +7,7 @@ interface FuiTestTarget {
 }
 
 interface FuiTestMethods {
-  data(val: string | string[]): this;
+  data(val: string | string[]): FuiElement<FuiTestTarget, unknown, FuiTestMethods>;
 }
 
 const { foo, bar, baz } = core<FuiTestTarget, "foo" | "bar" | "baz", FuiTestMethods>({
@@ -17,7 +17,7 @@ const { foo, bar, baz } = core<FuiTestTarget, "foo" | "bar" | "baz", FuiTestMeth
   append(a: FuiTestTarget, b: FuiTestTarget) {
     return a.children.push(b)
   }
-}, (tap: core.FuiTap<FuiTestTarget, FuiTestMethods>) => ({
+}, (tap: FuiTap<FuiTestTarget, FuiTestMethods>) => ({
   data(val: string | string[]) {
     return tap((_, fx) => fx.data = val);
   }
