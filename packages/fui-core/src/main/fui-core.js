@@ -1,8 +1,7 @@
 'use strict';
 
 module.exports = ({ build, append }, methods = (() => {})) => {
-
-  const core = f => ((tap) => Object.assign(f, {
+  const core = f => (tap => Object.assign(f, {
     ...methods(tap),
 
     /**
