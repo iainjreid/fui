@@ -1,6 +1,6 @@
 {
   "name": "@emphori/fui-svg",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "SVG rendering library for Fui",
   "keywords": [
     "functional",
@@ -16,7 +16,7 @@
     "lib"
   ],
   "dependencies": {
-    "@emphori/fui-core": "^0.1.1"
+    "@emphori/fui-core": "^0.1.2"
   },
   "publishConfig": {
     "access": "public"
