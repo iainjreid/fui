@@ -1,6 +1,6 @@
 import * as html from "@emphori/fui-html";
 import * as svg from "@emphori/fui-svg";
-import * as globals from "../..";
+import * as globals from "../main/fui-globals";
 
 describe("fui-globals", () => {
   describe("html", () => {

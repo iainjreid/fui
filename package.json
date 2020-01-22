@@ -9,14 +9,14 @@
   },
   "devDependencies": {
     "@emphori/eslint-config": "^0.1.7",
-    "@emphori/jest-preset": "^0.0.4",
-    "@types/jest": "^24.0.23",
+    "@emphori/jest-preset": "^0.0.5",
+    "@types/jest": "^24.9.0",
     "@types/node": "^11.13.22",
     "eslint": "^6.7.0",
     "jest": "^24.9.0",
     "lerna": "^3.19.0",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.7.2"
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.5"
   },
   "eslintConfig": {
     "extends": "@emphori",
@@ -29,7 +29,7 @@
   "jest": {
     "preset": "@emphori/jest-preset",
     "collectCoverageFrom": [
-      "packages/*/lib/*.js"
+      "packages/*/src/main/**/*"
     ]
   },
   "license": "MIT",

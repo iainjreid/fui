@@ -1,4 +1,4 @@
-import { core, FuiTap, FuiElement } from "../..";
+import { core, FuiTap, FuiElement } from "../main/fui-core";
 
 interface FuiTestTarget {
   name: string;

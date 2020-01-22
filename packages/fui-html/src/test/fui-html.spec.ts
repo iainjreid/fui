@@ -1,4 +1,4 @@
-import { div } from "../..";
+import { div } from "../main/fui-html";
 
 describe("fui-html", () => {
   test("ensure nodes are correct (1)", () => {
