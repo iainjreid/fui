@@ -23,3 +23,10 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Publish
+      if: startsWith(github.ref, 'refs/tags/v')
+      run: |
+        echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
+        echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
+        npx lerna publish from-package --yes --registry=https://registry.npmjs.org/
+        npx lerna publish from-package --yes --registry=https://npm.pkg.github.com/
