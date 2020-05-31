@@ -1,37 +1,58 @@
 {
-  "name": "fui",
+  "name": "@emphori/fui",
   "description": "A functional UI framework",
+  "keywords": [
+    "functional",
+    "user",
+    "interface",
+    "framework"
+  ],
+  "author": "Emphori (https://emphori.co)",
+  "contributors": [
+    "Iain Reid <iainreid382@gmail.com> (https://chaff.land)"
+  ],
+  "homepage": "https://github.com/Emphori/fui#readme",
+  "license": "MIT",
+  "main": "lib/fui.js",
+  "type": "module",
+  "exports": {
+    "./globals": "./lib/shared/globals.js",
+    "./html": "./lib/shared/html.js",
+    "./svg": "./lib/shared/svg.js"
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "install": "lerna link",
-    "lint": "eslint .",
-    "prepare": "lerna run prepare",
-    "test": "jest"
+    "lint": "eslint lib",
+    "test": "karma start karma.conf.cjs"
   },
   "devDependencies": {
     "@emphori/eslint-config": "^0.1.7",
-    "@emphori/jest-preset": "^0.0.5",
-    "@types/jest": "^24.9.0",
-    "@types/node": "^11.13.22",
     "eslint": "^6.7.0",
-    "jest": "^24.9.0",
-    "lerna": "^3.19.0",
-    "ts-jest": "^24.3.0",
-    "typescript": "^3.7.5"
+    "karma": "^5.0.2",
+    "karma-coverage-istanbul-instrumenter": "^1.0.2",
+    "karma-coverage-istanbul-reporter": "^2.1.1",
+    "karma-mocha": "^2.0.0",
+    "karma-should": "^1.0.0",
+    "mocha": "^7.1.1",
+    "should": "^13.2.3"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "eslintConfig": {
     "extends": "@emphori",
     "rules": {
       "no-empty-function": "off",
-      "no-param-reassign": "off",
-      "valid-jsdoc": "off"
+      "no-param-reassign": "off"
     }
   },
-  "jest": {
-    "preset": "@emphori/jest-preset",
-    "collectCoverageFrom": [
-      "packages/*/src/main/**/*"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Emphori/fui.git"
   },
-  "license": "MIT",
-  "private": true
+  "bugs": {
+    "url": "https://github.com/Emphori/fui/issues"
+  }
 }
