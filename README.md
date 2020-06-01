@@ -53,6 +53,14 @@ const elem = myWrapper();
 document.body.appendChild(elem);
 ```
 
+## FAQ
+
+### Why is this not written in TypeScript?
+
+There's rational behind not using TS for this project, simply put, the need to
+easily document the possible values exposed by a Proxy isn't currently met by
+the tooling provided.
+
 ## License
 
 This project is released under the [MIT License](./LICENSE). Enjoy responsibly
