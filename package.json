@@ -1,5 +1,6 @@
 {
   "name": "@emphori/fui",
+  "version": "0.1.2",
   "description": "A functional UI framework",
   "keywords": [
     "functional",
