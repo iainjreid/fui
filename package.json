@@ -36,7 +36,7 @@
     "karma-coverage-istanbul-reporter": "^2.1.1",
     "karma-mocha": "^2.0.0",
     "karma-should": "^1.0.0",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "should": "^13.2.3"
   },
   "publishConfig": {
